@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+% 
+% Linfeng Li (llinfeng@umich.edu) edited this template to add UMSI logo, with help from @MiYaLaTeX (MiyaLatex@QQ.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+% This template came dirctly from Overleaf, when searching for research
+% statement. The full typesetting aspect is prepared on 2021-11-05, in Subaru
+% dealership.
+% Source: https://www.overleaf.com/articles/teaching-and-research-statement/cxzzxtrmnpyj
+    % And, Ethan - https://eng.umd.edu/clark/faculty/1108/W-Ethan-Eagle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[margin=0.8in]{geometry} % Reduce document margins
+\usepackage{setspace}
+% \doublespacing
+\onehalfspacing
+
+% leading-space
+\newcommand*{\LeadingSpace}{{\hskip 2em}} 
+\parindent=2em
+
+%\usepackage{bookmark}
+ 
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+% Note, if the following is populated, it will take a ton of space with very
+% large NAME LName, taking 1/3 of the whole page.
+\firstname{\LARGE FirstName LastName}  % EditThis
+
+\photo[6cm][0pt]{UMSI_Long.jpg}
+
+% All information in this block is optional, comment out any lines you don't need
+\mobile{(999)-999-9999}
+\email{emailaddr@domain.io}
+
+%\usepackage{hyperref}
+
+% These are texts that go to the bottom, as the last line in the footer.
+% \extrainfo{This will show up at the bottom of the page}
+
+% This will be a centered text
+% \quote{This is a quote in the preamble}
+
+%----------------------------------------------------------------------------------------
+
+\setlength{\parindent}{0pt} % remove indentation for all paragraphs
+
+\usepackage{lipsum}
+
+\begin{document}
+
+% For unclear reasons, this needs to go after the \begin{document} line.
+% Otherwise, the text in the first page will overlap with the footer text.
+\homepage{your.fancy.website.io}{}  % EditThis or comment out 
+                            % Don't put anything in the second argument. Or, expect to be surprised :)
+
+
+\title{Cover Letter}
+\makecvtitle % Print the title part - Research Statement
+% \maketitle
+%\bookmark[level=0]{Cover Letter}  % Force to have a bookmark
+\pdfbookmark[0]{Cover Letter}{Cover Letter}  % Force to have a bookmark
+
+\vskip -3.5em
+\hfill \today
+
+\setlength{\parskip}{1em}  % to adjust the space between paragraph
+
+% This pair of \vfill commands will push CoverLetterText content to the middle of the page.
+\vfill 
+\input{CoverLetterText}
+\vfill
+
+\newpage
+
+\title{Teaching Statement}  % This will show up on the top-right of the page.
+\makecvtitle % Print the title part - Research Statement
+\pdfbookmark[0]{Teaching Statement}{Teaching Statement}  % Force to have a bookmark
+
+% This pair of \vfill commands will push CoverLetterText content to the middle of the page.
+\vfill 
+\input{TeachingStatement}
+\vfill 
+
+\end{document}
