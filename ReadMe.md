@@ -11,3 +11,7 @@ This template features UMSI logo as the letter head, with two extra goodies:
 % To add a bookmark, use:
 \pdfbookmark[0]{Cover Letter}{Cover Letter}  % Force to have a bookmark
 ```
+
+## Sample PDF
+See <https://github.com/UMBEE/UMSI_coverletter_template/blob/master/main.pdf>
+for a compiled example.
